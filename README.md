@@ -1,6 +1,6 @@
 # Ogechi Laura Amajuoyi (aka codeurmystique) 👋
 
-💡 **Data Analyst & Scientist** | Storyteller with Data | Lifelong Learner  
+💡 **Data Analyst** | Problem-Solver with Data | Lifelong Learner  
 
 Hi! I’m **Ogechi Laura Amajuoyi**, also known online as **`codeurmystique`**.  
 I love uncovering insights hidden in data and turning them into actionable stories that drive real-world impact.
@@ -9,7 +9,7 @@ I love uncovering insights hidden in data and turning them into actionable stori
 
 ### 🚀 About Me
 - 🔍 Passionate about **Data Analysis, Machine Learning, and Visualization**
-- 🛠 Skilled in **Python, SQL, R, Tableau, Spreadsheets and Presentation tools**
+- 🛠 Skilled in **R, SQL, Python, Tableau, Spreadsheets and Presentation tools**
 - 📊 Experienced in **data colection and wrangling, dashboard design, and exploratory data analysis**
 - 🌱 Currently exploring **AI and Machine Learning**
 
