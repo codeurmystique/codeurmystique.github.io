@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Ogechi</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<script defer src="assets/js/site.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+    <div class="brand"><div class="dot"></div><h1>Projects</h1></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="process.html">Process</a>
+      <a href="visuals.html">Visuals</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <div class="paper" style="display:flex; gap:.8rem; align-items:center;">
+    <input id="search" placeholder="Search projects (e.g., 'forecast', 'SQL')" style="flex:1; padding:.6rem .8rem; border:1px solid #e9e0cf; border-radius:10px;">
+    <small style="color:var(--muted)">Type to filter</small>
+  </div>
+
+  <div class="grid" id="projectsGrid">
+    <a class="card" href="study-forecast.html">
+      <img class="thumb" src="assets/img/thumb-forecast.svg">
+      <h3>Retail Sales Forecasting</h3>
+      <p>MAPE reduction using SARIMAX and calendar features.</p>
+      <div class="badges"><span>Time series</span><span>statsmodels</span><span>Python</span></div>
+    </a>
+
+    <a class="card" href="study-taxi.html">
+      <img class="thumb" src="assets/img/thumb-taxi.svg">
+      <h3>NYC Taxi EDA</h3>
+      <p>Outlier fares, seasonal patterns, and heatmaps.</p>
+      <div class="badges"><span>Pandas</span><span>GeoPandas</span><span>Altair</span></div>
+    </a>
+
+    <a class="card" href="study-bike.html">
+      <img class="thumb" src="assets/img/thumb-bike.svg">
+      <h3>Converting Casual Riders</h3>
+      <p>Segmentation & levers for membership uplift.</p>
+      <div class="badges"><span>SQL</span><span>Python</span><span>Power BI</span></div>
+    </a>
+
+    <a class="card" href="study-ab.html">
+      <img class="thumb" src="assets/img/thumb-ab.svg">
+      <h3>A/B Test Evaluation</h3>
+      <p>Designed & analyzed an experiment with CUPED.</p>
+      <div class="badges"><span>Experimentation</span><span>Stats</span></div>
+    </a>
+  </div>
+</main>
+<footer class="site-footer"><div class="container">© <span id="y"></span> Ogechi — codeurmystique</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body></html>

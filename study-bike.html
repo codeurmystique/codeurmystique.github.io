@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Converting Casual Riders — Case Study</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+    <div class="brand"><div class="dot"></div><h1>Converting Casual Riders</h1></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="process.html">Process</a>
+      <a href="visuals.html">Visuals</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <article class="paper">
+    <h3 class="section-title">Summary</h3>
+    <p>Segmented riders and sized conversion levers; prioritized targeting for membership uplift.</p>
+
+    <h3 class="section-title">Problem</h3>
+    <p>Increase conversion from casual riders to members while maintaining rider experience.</p>
+
+    <h3 class="section-title">Data</h3>
+    <ul>
+      <li>Sources: Bike share trips, user type labels, station metadata</li>
+      <li>Timeframe: Rolling 12 months</li>
+      <li>Size & key fields: 30M trips; features: duration, weekday, station density, weather join</li>
+    </ul>
+
+    <h3 class="section-title">Approach</h3>
+    <p>Cohort analysis; feature importance; uplift modeling for targeted offers.</p>
+    <pre><code>segments = model.fit_predict(X)
+# identify high‑propensity casual cohorts</code></pre>
+
+    <h3 class="section-title">Results</h3>
+    <p>Projected +6–9% conversion via 3 specific levers (weekend bundles, station promos, commute pass).</p>
+
+    <h3 class="section-title">Links</h3>
+    <ul>
+      <li><a href="#">Notebook / repo</a></li>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Dataset</a></li>
+    </ul>
+  </article>
+</main>
+
+<footer class="site-footer"><div class="container">© <span id="y"></span> Ogechi — codeurmystique</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body></html>

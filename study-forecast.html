@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retail Sales Forecasting — Case Study</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+    <div class="brand"><div class="dot"></div><h1>Retail Sales Forecasting</h1></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="process.html">Process</a>
+      <a href="visuals.html">Visuals</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <article class="paper">
+    <h3 class="section-title">Summary</h3>
+    <p>Reduced forecasting error (MAPE) by 18% using SARIMAX with holiday/seasonality features.</p>
+
+    <h3 class="section-title">Problem</h3>
+    <p>Predict weekly sales at category‑store level; reduce stockouts and overstock.</p>
+
+    <h3 class="section-title">Data</h3>
+    <ul>
+      <li>Sources: POS transactions, calendar (holidays), promotions</li>
+      <li>Timeframe: Jan 2023 – Dec 2023</li>
+      <li>Size & key fields: ~2M rows; keys: date, store_id, category_id; y: sales</li>
+    </ul>
+
+    <h3 class="section-title">Approach</h3>
+    <p>Baseline SARIMA → add exogenous regressors (promo, holiday dummies); rolling origin validation.</p>
+    <pre><code>from statsmodels.tsa.statespace.sarimax import SARIMAX
+model = SARIMAX(y, order=(1,1,1), seasonal_order=(1,1,1,52), exog=X).fit()</code></pre>
+
+    <h3 class="section-title">Results</h3>
+    <p>MAPE ↓ 18%; identified 3 promo windows with largest elasticity.</p>
+
+    <h3 class="section-title">Links</h3>
+    <ul>
+      <li><a href="#">Notebook / repo</a></li>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Dataset</a></li>
+    </ul>
+  </article>
+</main>
+
+<footer class="site-footer"><div class="container">© <span id="y"></span> Ogechi — codeurmystique</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body></html>

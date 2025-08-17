@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NYC Taxi EDA — Case Study</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+    <div class="brand"><div class="dot"></div><h1>NYC Taxi EDA</h1></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="process.html">Process</a>
+      <a href="visuals.html">Visuals</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <article class="paper">
+    <h3 class="section-title">Summary</h3>
+    <p>Cleaned data, detected fare anomalies, and mapped high‑demand zones to inform pricing and dispatch.</p>
+
+    <h3 class="section-title">Problem</h3>
+    <p>Understand patterns in trip duration, fares, and pickup hotspots; flag anomalies.</p>
+
+    <h3 class="section-title">Data</h3>
+    <ul>
+      <li>Sources: NYC TLC trips + geo shapefiles</li>
+      <li>Timeframe: 2019 full year</li>
+      <li>Size & key fields: ~10M rows; features: pickup_lat/lon, dropoff_lat/lon, fare, tip, distance</li>
+    </ul>
+
+    <h3 class="section-title">Approach</h3>
+    <p>Outlier capping on fare & distance; temporal aggregation; hexbin heatmaps.</p>
+    <pre><code>df = df[df.fare.between(2,200)]
+# hexbin aggregations by hour and zone</code></pre>
+
+    <h3 class="section-title">Results</h3>
+    <p>Found undercharged routes and peak-time clusters near transit hubs.</p>
+
+    <h3 class="section-title">Links</h3>
+    <ul>
+      <li><a href="#">Notebook / repo</a></li>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Dataset</a></li>
+    </ul>
+  </article>
+</main>
+
+<footer class="site-footer"><div class="container">© <span id="y"></span> Ogechi — codeurmystique</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body></html>
