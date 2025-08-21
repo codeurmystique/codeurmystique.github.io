@@ -1,37 +1,21 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Visuals — Ogechi</title>
-<link rel="stylesheet" href="assets/css/style.css">
-<script defer src="assets/js/site.js"></script>
-</head>
-<body>
-<header class="site-header">
-  <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
-    <div class="brand"><div class="dot"></div><h1>Visual Gallery</h1></div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="process.html">Process</a>
-      <a href="about.html">About</a>
-    </nav>
-  </div>
-</header>
+---
+layout: single
+title: "Visuals & Dashboards"
+permalink: /visuals.html
+---
 
-<main class="container">
-  <p class="paper">A gallery for charts, dashboards, and artifacts. Click any image to view large.</p>
+<h1>Visuals & Dashboards</h1>
+<p>Here is a showcase of selected visualizations created across my case studies:</p>
 
-  <div class="grid">
-    <img class="card thumb" src="assets/img/thumb-forecast.svg" data-lightbox>
-    <img class="card thumb" src="assets/img/thumb-bike.svg" data-lightbox>
-    <img class="card thumb" src="assets/img/thumb-taxi.svg" data-lightbox>
-    <img class="card thumb" src="assets/img/thumb-ab.svg" data-lightbox>
-  </div>
-</main>
+<ul>
+  <li><a href="study-ab.html">Employee Attrition Pivot Charts (Excel)</a></li>
+  <li><a href="study-bike.html">Cyclistic Conversion Trends (R plots)</a></li>
+  <li><a href="study-forecast.html">Bellabeat Wellness Dashboard (Tableau)</a></li>
+  <li><a href="study-taxi.html">NYC Pricing Model (Python – exploratory visuals)</a></li>
+</ul>
 
-<div id="lightbox" class="lightbox"><img src="" alt=""></div>
+<p>I use charts not only to display numbers but to <strong>reveal stories hidden in data</strong>.</p>
 
-<footer class="site-footer"><div class="container">© <span id="y"></span> Ogechi — codeurmystique</div></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body></html>
+<footer>
+  Codeurmystique ~ Data is the oil, Insight is the fire
+</footer>
