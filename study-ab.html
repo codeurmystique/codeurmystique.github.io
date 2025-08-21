@@ -1,97 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study 1: Employee Attrition Analysis</title>
-    <!-- Use the Inter font from Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Tailwind CSS CDN for styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* Custom styles for the case study page */
-        .case-study-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            background-color: #f9fafb;
-            border-radius: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-    </style>
-</head>
-<body class="bg-gray-100 p-8">
-    <div class="case-study-container">
-        <!-- Main title of the case study -->
-        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">Case Study 1: Employee Attrition Analysis</h1>
+---
+title: "Case Study 1: Employee Attrition Analysis"
+layout: single
+permalink: /study-ab/
+---
 
-        <!-- Subheading and business problem -->
-        <div class="text-base text-gray-600 mb-12">
-            <p><strong>Business Problem:</strong> A human resources department was concerned about a high rate of employee attrition and wanted to identify key factors contributing to employees leaving the company.</p>
-        </div>
+<!-- Main title of the case study -->
+<h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">Case Study 1: Employee Attrition Analysis</h1>
 
-        <!-- Tools Used section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-600 mb-4">Tools Used</h2>
-            <ul class="list-none space-y-2 text-lg">
-                <li class="flex items-center justify-center">
-                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
-                    <p class="text-gray-800">R (Data cleaning and predictive modeling)</p>
-                </li>
-                <li class="flex items-center justify-center">
-                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
-                    <p class="text-gray-800">Tableau (Interactive dashboards)</p>
-                </li>
-                <li class="flex items-center justify-center">
-                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
-                    <p class="text-gray-800">PowerPoint (Presenting key findings and recommendations)</p>
-                </li>
-            </ul>
-        </section>
+<!-- Subheading and business problem -->
+<div class="text-base text-gray-600 mb-12">
+    <p><strong>Business Problem:</strong> A human resources department was concerned about a high rate of employee attrition and wanted to identify key factors contributing to employees leaving the company.</p>
+</div>
 
-        <!-- Key Insights section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-600 mb-4">Key Insights</h2>
-            <ul class="list-none space-y-3 text-left pl-0 text-lg">
-                <li class="flex items-start">
-                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
-                    <p class="text-gray-800">Employees with lower job satisfaction and higher workload are more likely to leave.</p>
-                </li>
-                <li class="flex items-start">
-                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
-                    <p class="text-gray-800">Salary, while a factor, is not the primary driver of attrition for employees who have been with the company for more than 5 years.</p>
-                </li>
-                <li class="flex items-start">
-                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
-                    <p class="text-gray-800">A lack of professional development opportunities is a significant predictor of attrition among junior-level staff.</p>
-                </li>
-            </ul>
-        </section>
+<!-- Tools Used section -->
+<section class="mb-12">
+    <h2 class="text-3xl font-bold text-blue-600 mb-4">Tools Used</h2>
+    <ul class="list-none space-y-2 text-lg">
+        <li class="flex items-center justify-center">
+            <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+            <p class="text-gray-800">R (Data cleaning and predictive modeling)</p>
+        </li>
+        <li class="flex items-center justify-center">
+            <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+            <p class="text-gray-800">Tableau (Interactive dashboards)</p>
+        </li>
+        <li class="flex items-center justify-center">
+            <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+            <p class="text-gray-800">PowerPoint (Presenting key findings and recommendations)</p>
+        </li>
+    </ul>
+</section>
 
-        <!-- Recommendations section -->
-        <section>
-            <h2 class="text-3xl font-bold text-blue-600 mb-4">Recommendations</h2>
-            <ul class="list-none space-y-3 text-left pl-0 text-lg">
-                <li class="flex items-start">
-                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
-                    <p class="text-gray-800">Implement a performance review system that includes regular check-ins on job satisfaction and workload management.</p>
-                </li>
-                <li class="flex items-start">
-                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
-                    <p class="text-gray-800">Develop a mentorship program that pairs junior employees with senior staff to foster professional growth.</p>
-                </li>
-                <li class="flex items-start">
-                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
-                    <p class="text-gray-800">Conduct exit interviews with departing employees to gather qualitative data on reasons for leaving and identify recurring patterns.</p>
-                </li>
-            </ul>
-        </section>
-    </div>
-</body>
-</html>
+<!-- Key Insights section -->
+<section class="mb-12">
+    <h2 class="text-3xl font-bold text-blue-600 mb-4">Key Insights</h2>
+    <ul class="list-none space-y-3 text-left pl-0 text-lg">
+        <li class="flex items-start">
+            <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+            <p class="text-gray-800">Employees with lower job satisfaction and higher workload are more likely to leave.</p>
+        </li>
+        <li class="flex items-start">
+            <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+            <p class="text-gray-800">Salary, while a factor, is not the primary driver of attrition for employees who have been with the company for more than 5 years.</p>
+        </li>
+        <li class="flex items-start">
+            <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+            <p class="text-gray-800">A lack of professional development opportunities is a significant predictor of attrition among junior-level staff.</p>
+        </li>
+    </ul>
+</section>
+
+<!-- Recommendations section -->
+<section>
+    <h2 class="text-3xl font-bold text-blue-600 mb-4">Recommendations</h2>
+    <ul class="list-none space-y-3 text-left pl-0 text-lg">
+        <li class="flex items-start">
+            <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+            <p class="text-gray-800">Implement a performance review system that includes regular check-ins on job satisfaction and workload management.</p>
+        </li>
+        <li class="flex items-start">
+            <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+            <p class="text-gray-800">Develop a mentorship program that pairs junior employees with senior staff to foster professional growth.</p>
+        </li>
+        <li class="flex items-start">
+            <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+            <p class="text-gray-800">Conduct exit interviews with departing employees to gather qualitative data on reasons for leaving and identify recurring patterns.</p>
+        </li>
+    </ul>
+</section>
