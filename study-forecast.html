@@ -1,50 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Case Study 3 | Fitness Tracker Marketing</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study 3: Bellabeat Marketing Analysis</title>
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for the case study page */
+        .case-study-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #f9fafb;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
 </head>
-<body>
-<header class="sub-header">
-  <nav class="navbar">
-    <a href="index.html" class="logo">Codeurmystique</a>
-    <ul class="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="process.html">Process</a></li>
-      <li><a href="visuals.html">Visuals</a></li>
-    </ul>
-  </nav>
-</header>
+<body class="bg-gray-100 p-8">
+    <div class="case-study-container">
+        <!-- Main title of the case study -->
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">Case Study 3: Bellabeat Marketing Analysis</h1>
 
-<main class="content">
-  <h1>Case Study 3: Fitness Tracker Marketing</h1>
-  <p><em>Dataset:</em> FitBit Fitness Tracker Dataset (public dataset on Kaggle – licensed for educational use).</p>
-  <h2>Business Context</h2>
-  <p><strong>Bellabeat</strong> (fictional women’s wellness company) wanted to leverage fitness-tracker data to inform marketing strategies and increase user engagement.</p>
-  <h2>Tools Used</h2>
-  <ul>
-    <li>SQL (data cleaning and querying)</li>
-    <li>Tableau (dashboards & visualization)</li>
-  </ul>
-  <h2>Key Insights</h2>
-  <ul>
-    <li>Users with consistent sleep and step patterns were more engaged with Bellabeat’s app.</li>
-    <li>Engagement was higher among users who tracked their wellness across multiple categories (activity, calories, heart rate).</li>
-    <li>Weekend activity levels dropped sharply compared to weekdays.</li>
-  </ul>
-  <h2>Recommendations</h2>
-  <ul>
-    <li>Launch campaigns encouraging holistic wellness tracking (not just steps).</li>
-    <li>Personalized reminders for sleep and recovery goals.</li>
-    <li>Weekend activity challenges to boost app engagement.</li>
-  </ul>
-</main>
+        <!-- Subheading and business problem -->
+        <div class="text-base text-gray-600 mb-12">
+            <p><strong>Business Problem:</strong> A fitness-tracker company, **Bellabeat**, wanted to analyze user data from a public dataset to gain insights into how people use their smart devices. These insights would be used to inform Bellabeat’s marketing strategy and guide future business decisions.</p>
+        </div>
 
-<footer>
-  Codeurmystique ~ Data is the oil, Insight is the fire
-</footer>
+        <!-- Tools Used section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">Tools Used</h2>
+            <ul class="list-none space-y-2 text-lg">
+                <li class="flex items-center justify-center">
+                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">SQL (Data cleaning and analysis)</p>
+                </li>
+                <li class="flex items-center justify-center">
+                    <span class="mr-2 text-yellow-50 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">Tableau (Dashboards and visualizations)</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Key Insights section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">Key Insights</h2>
+            <ul class="list-none space-y-3 text-left pl-0 text-lg">
+                <li class="flex items-start">
+                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">Users who log data for all three metrics (activity, sleep, and weight) are more engaged and use the device for a longer period.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">There is a positive correlation between active time and logged sleep data, suggesting that more active users are also more conscious about their sleep habits.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">Users who use the tracker less than 3 times a week tend to have a higher sedentary rate.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Recommendations section -->
+        <section>
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">Recommendations</h2>
+            <ul class="list-none space-y-3 text-left pl-0 text-lg">
+                <li class="flex items-start">
+                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">Develop a feature in the app to encourage and gamify the logging of all three metrics (activity, sleep, and weight).</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">Launch a marketing campaign highlighting the link between activity and sleep, positioning Bellabeat as a holistic wellness solution.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">Introduce a "weekly challenge" to incentivize low-activity users to reach a minimum usage goal and reduce sedentary behavior.</p>
+                </li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
