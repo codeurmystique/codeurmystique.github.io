@@ -1,25 +1,25 @@
-title: "Case Study 2: Bike-Share Conversion" layout: single permalink: /projects/bike-share-conversion/
-Case Study 2: Bike-Share Conversion
-Dataset: Divvy Bike Share Data (public dataset – licensed for educational use).
+title: "Case Study 2: Bike-Share Marketing" layout: single permalink: /projects/bike-share-marketing/
+Case Study 2: Bike-Share Marketing
+Dataset: Divvy Bike-Share data (public dataset on Motivate International Inc.).
 
 Business Context
-Cyclistic (fictional company) wanted to convert casual riders into annual members. Membership is more profitable and builds long-term loyalty.
+Cyclistic (fictional bike-share company) wanted to understand the differences between casual riders and annual members to inform a new marketing strategy focused on converting casual riders to members.
 
 Tools Used
-R Programming
+R (data cleaning and analysis)
 
-RStudio
+Tableau (dashboards & visualization)
 
 Key Insights
-Casual riders mainly use bikes on weekends and for leisure rides.
+Annual members use bikes more consistently throughout the year.
 
-Members ride consistently during weekdays, mostly commuting.
+Casual riders use bikes more on weekends and for longer durations.
 
-Average trip time for casual riders is significantly longer.
+Casual riders are more likely to use classic bikes, while members prefer docked bikes.
 
 Recommendations
-Offer tiered membership models (e.g., weekend pass, flex memberships).
+Offer a "day pass" bundle for casual riders to encourage higher usage.
 
-Run seasonal campaigns to capture summer casual riders.
+Launch weekend-specific marketing campaigns highlighting the benefits of membership.
 
-Enhance app features to highlight cost savings of membership.
+Develop a mobile-friendly feature that suggests membership options after a certain number of rides.
