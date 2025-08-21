@@ -1,55 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Retail Sales Forecasting — Case Study</title>
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study 3 | Fitness Tracker Marketing</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
-    <div class="brand"><div class="dot"></div><h1>Retail Sales Forecasting</h1></div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="process.html">Process</a>
-      <a href="visuals.html">Visuals</a>
-    </nav>
-  </div>
+<header class="sub-header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">Codeurmystique</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="visuals.html">Visuals</a></li>
+    </ul>
+  </nav>
 </header>
 
-<main class="container">
-  <article class="paper">
-    <h3 class="section-title">Summary</h3>
-    <p>Reduced forecasting error (MAPE) by 18% using SARIMAX with holiday/seasonality features.</p>
-
-    <h3 class="section-title">Problem</h3>
-    <p>Predict weekly sales at category‑store level; reduce stockouts and overstock.</p>
-
-    <h3 class="section-title">Data</h3>
-    <ul>
-      <li>Sources: POS transactions, calendar (holidays), promotions</li>
-      <li>Timeframe: Jan 2023 – Dec 2023</li>
-      <li>Size & key fields: ~2M rows; keys: date, store_id, category_id; y: sales</li>
-    </ul>
-
-    <h3 class="section-title">Approach</h3>
-    <p>Baseline SARIMA → add exogenous regressors (promo, holiday dummies); rolling origin validation.</p>
-    <pre><code>from statsmodels.tsa.statespace.sarimax import SARIMAX
-model = SARIMAX(y, order=(1,1,1), seasonal_order=(1,1,1,52), exog=X).fit()</code></pre>
-
-    <h3 class="section-title">Results</h3>
-    <p>MAPE ↓ 18%; identified 3 promo windows with largest elasticity.</p>
-
-    <h3 class="section-title">Links</h3>
-    <ul>
-      <li><a href="#">Notebook / repo</a></li>
-      <li><a href="#">Dashboard</a></li>
-      <li><a href="#">Dataset</a></li>
-    </ul>
-  </article>
+<main class="content">
+  <h1>Case Study 3: Fitness Tracker Marketing</h1>
+  <p><em>Dataset:</em> FitBit Fitness Tracker Dataset (public dataset on Kaggle – licensed for educational use).</p>
+  <h2>Business Context</h2>
+  <p><strong>Bellabeat</strong> (fictional women’s wellness company) wanted to leverage fitness-tracker data to inform marketing strategies and increase user engagement.</p>
+  <h2>Tools Used</h2>
+  <ul>
+    <li>SQL (data cleaning and querying)</li>
+    <li>Tableau (dashboards & visualization)</li>
+  </ul>
+  <h2>Key Insights</h2>
+  <ul>
+    <li>Users with consistent sleep and step patterns were more engaged with Bellabeat’s app.</li>
+    <li>Engagement was higher among users who tracked their wellness across multiple categories (activity, calories, heart rate).</li>
+    <li>Weekend activity levels dropped sharply compared to weekdays.</li>
+  </ul>
+  <h2>Recommendations</h2>
+  <ul>
+    <li>Launch campaigns encouraging holistic wellness tracking (not just steps).</li>
+    <li>Personalized reminders for sleep and recovery goals.</li>
+    <li>Weekend activity challenges to boost app engagement.</li>
+  </ul>
 </main>
 
-<footer class="site-footer"><div class="container">© <span id="y"></span> Ogechi — codeurmystique</div></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body></html>
+<footer>
+  Codeurmystique ~ Data is the oil, Insight is the fire
+</footer>
+</body>
+</html>
