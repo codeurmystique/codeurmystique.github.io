@@ -38,3 +38,18 @@ footer {
   font-size: 1.5rem;
   color: #5a4633;
 }
+.site-footer {
+  background-color: #f4ede6 !important; /* soft beige */
+  padding: 1.5em 0;
+  text-align: center;
+  font-style: italic;
+  color: #5a4633 !important;
+  border-top: 1px solid #d4c4b2;
+}
+
+.site-footer p {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1em;
+}
+
