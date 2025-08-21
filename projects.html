@@ -1,59 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects — Ogechi</title>
-<link rel="stylesheet" href="assets/css/style.css">
-<script defer src="assets/js/site.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Codeurmystique</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
-    <div class="brand"><div class="dot"></div><h1>Projects</h1></div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="process.html">Process</a>
-      <a href="visuals.html">Visuals</a>
-      <a href="about.html">About</a>
+  <header class="sub-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Codeurmystique</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="visuals.html">Visuals</a></li>
+      </ul>
     </nav>
-  </div>
-</header>
-<main class="container">
-  <div class="paper" style="display:flex; gap:.8rem; align-items:center;">
-    <input id="search" placeholder="Search projects (e.g., 'forecast', 'SQL')" style="flex:1; padding:.6rem .8rem; border:1px solid #e9e0cf; border-radius:10px;">
-    <small style="color:var(--muted)">Type to filter</small>
-  </div>
+  </header>
 
-  <div class="grid" id="projectsGrid">
-    <a class="card" href="study-forecast.html">
-      <img class="thumb" src="assets/img/thumb-forecast.svg">
-      <h3>Retail Sales Forecasting</h3>
-      <p>MAPE reduction using SARIMAX and calendar features.</p>
-      <div class="badges"><span>Time series</span><span>statsmodels</span><span>Python</span></div>
-    </a>
+  <main>
+    <section class="grid">
+      <a href="study-ab.html" class="card">
+        <img src="thumb-ab.svg" alt="Employee Attrition Study Thumbnail">
+        <h2>Employee Attrition Analysis</h2>
+        <p>Using IBM HR dataset, Excel & Pivot Charts</p>
+      </a>
+      <a href="study-bike.html" class="card">
+        <img src="thumb-bike.svg" alt="Bike Share Study Thumbnail">
+        <h2>Bike-Share Conversion</h2>
+        <p>Using R & RStudio for Cyclistic</p>
+      </a>
+      <a href="study-forecast.html" class="card">
+        <img src="thumb-forecast.svg" alt="Fitness Tracker Study Thumbnail">
+        <h2>Fitness-Tracker Marketing</h2>
+        <p>Using SQL & Tableau for Bellabeat</p>
+      </a>
+      <a href="study-taxi.html" class="card">
+        <img src="thumb-taxi.svg" alt="NYC Pricing Study Thumbnail">
+        <h2>NYC Pricing Prediction</h2>
+        <p>Work-in-Progress | Python & Pandas</p>
+      </a>
+    </section>
+  </main>
 
-    <a class="card" href="study-taxi.html">
-      <img class="thumb" src="assets/img/thumb-taxi.svg">
-      <h3>NYC Taxi EDA</h3>
-      <p>Outlier fares, seasonal patterns, and heatmaps.</p>
-      <div class="badges"><span>Pandas</span><span>GeoPandas</span><span>Altair</span></div>
-    </a>
-
-    <a class="card" href="study-bike.html">
-      <img class="thumb" src="assets/img/thumb-bike.svg">
-      <h3>Converting Casual Riders</h3>
-      <p>Segmentation & levers for membership uplift.</p>
-      <div class="badges"><span>SQL</span><span>Python</span><span>Power BI</span></div>
-    </a>
-
-    <a class="card" href="study-ab.html">
-      <img class="thumb" src="assets/img/thumb-ab.svg">
-      <h3>A/B Test Evaluation</h3>
-      <p>Designed & analyzed an experiment with CUPED.</p>
-      <div class="badges"><span>Experimentation</span><span>Stats</span></div>
-    </a>
-  </div>
-</main>
-<footer class="site-footer"><div class="container">© <span id="y"></span> Ogechi — codeurmystique</div></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body></html>
+  <footer>
+    Codeurmystique ~ Data is the oil, Insight is the fire
+  </footer>
+</body>
+</html>
