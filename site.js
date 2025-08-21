@@ -1,4 +1,3 @@
-
 // site.js
 document.addEventListener("DOMContentLoaded", function() {
   // Smooth scroll for nav links
@@ -27,4 +26,3 @@ document.addEventListener("DOMContentLoaded", function() {
     appearOnScroll.observe(fader);
   });
 });
-
