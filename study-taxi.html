@@ -1,49 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Case Study 4 | NYC Pricing Prediction</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study 4: NYC Pricing Prediction</title>
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for the case study page */
+        .case-study-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #f9fafb;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
 </head>
-<body>
-<header class="sub-header">
-  <nav class="navbar">
-    <a href="index.html" class="logo">Codeurmystique</a>
-    <ul class="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="process.html">Process</a></li>
-      <li><a href="visuals.html">Visuals</a></li>
-    </ul>
-  </nav>
-</header>
+<body class="bg-gray-100 p-8">
+    <div class="case-study-container">
+        <!-- Main title of the case study -->
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">Case Study 4: NYC Pricing Prediction</h1>
 
-<main class="content">
-  <h1>Case Study 4: NYC Taxi Pricing Prediction (Work-in-Progress)</h1>
-  <p><em>Dataset:</em> New York City TLC Trip Record Data (public dataset – licensed for educational use).</p>
-  <h2>Business Context</h2>
-  <p>To demonstrate predictive modeling, I am developing a <strong>pricing prediction model</strong> for NYC taxi fares. This project is designed to showcase advanced data science workflow and communication of progress.</p>
-  <h2>Tools Used</h2>
-  <ul>
-    <li>Python</li>
-    <li>Jupyter Notebook</li>
-    <li>Pandas & NumPy</li>
-  </ul>
-  <h2>Deliverables</h2>
-  <ul>
-    <li>Project Proposal Document</li>
-    <li>Strategy Document</li>
-    <li>Executive Summary</li>
-    <li>Structured DataFrame prepared for Exploratory Data Analysis</li>
-    <li>Progress Updates shared with team</li>
-  </ul>
-  <h2>Current Progress</h2>
-  <p>Data cleaning is underway. Initial insights reveal unusual outliers (negative fares, extremely long trips). Early models suggest trip distance and pickup location are strong predictors of fare amount.</p>
-</main>
+        <!-- Subheading and dataset information -->
+        <div class="text-base text-gray-600 mb-12">
+            <p><strong>Dataset:</strong> New York City TLC Trip Record Data (public dataset – licensed for educational use).</p>
+        </div>
 
-<footer>
-  Codeurmystique ~ Data is the oil, Insight is the fire
-</footer>
+        <!-- Business Context section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">Business Context</h2>
+            <p class="text-gray-800 leading-relaxed text-lg">
+                To demonstrate predictive modeling, I am developing a <strong>pricing prediction model</strong> for NYC taxi fares. This project is designed to showcase an advanced data science workflow and the communication of progress.
+            </p>
+        </section>
+
+        <!-- Tools Used section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">Tools Used</h2>
+            <ul class="list-none space-y-2 text-lg">
+                <li class="flex items-center justify-center">
+                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">Python (Pandas & NumPy for data processing)</p>
+                </li>
+                <li class="flex items-center justify-center">
+                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">Jupyter Notebook (For exploratory data analysis and model development)</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Current Progress section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">Current Progress</h2>
+            <p class="text-gray-800 leading-relaxed text-lg mb-4">
+                Data cleaning is underway. Initial insights reveal unusual outliers (negative fares, extremely long trips). Early models suggest trip distance and pickup location are strong predictors of fare amount.
+            </p>
+            <ul class="list-none space-y-3 text-left pl-0 text-lg">
+                <li class="flex items-start">
+                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">Structured DataFrame prepared for Exploratory Data Analysis</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">Project Proposal and Strategy Documents drafted</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">Initial progress updates shared with the team</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Next Steps section -->
+        <section>
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">Next Steps</h2>
+            <ul class="list-none space-y-3 text-left pl-0 text-lg">
+                <li class="flex items-start">
+                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">Continue with outlier removal and feature engineering.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">Develop a more robust predictive model using advanced algorithms.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+                    <p class="text-gray-800">Create a final report with an executive summary and key findings.</p>
+                </li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
