@@ -1,72 +1,22 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Process — Ogechi</title>
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-<header class="site-header">
-  <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
-    <div class="brand"><div class="dot"></div><h1>Process & Thought Notes</h1></div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="visuals.html">Visuals</a>
-      <a href="about.html">About</a>
-    </nav>
-  </div>
-</header>
+---
+layout: single
+title: "My Process"
+permalink: /process.html
+---
 
-<main class="container">
-  <p class="paper">This section shows your thinking: framing, trade‑offs, model diagnosis, and how you make decisions. Short, readable, and human.</p>
+<h1>My Data Analysis Process</h1>
+<p>I believe data analysis is more than just numbers. It’s storytelling with structure. My process follows five guiding stages:</p>
 
-  <article class="paper">
-    <div class="step">
-      <span class="num">01</span>
-      <div>
-        <h4>Clarify the real question</h4>
-        <p>Translate ambiguous asks into measurable outcomes (e.g., “increase repeat rides by 10% in Q3”).</p>
-      </div>
-    </div>
+<ol>
+  <li><strong>Ask</strong> → Define the business problem clearly.</li>
+  <li><strong>Prepare</strong> → Collect, clean, and understand the data sources.</li>
+  <li><strong>Analyze</strong> → Use statistical and exploratory techniques.</li>
+  <li><strong>Visualize</strong> → Communicate findings with clarity and design.</li>
+  <li><strong>Share</strong> → Present insights with recommendations and actions.</li>
+</ol>
 
-    <div class="step">
-      <span class="num">02</span>
-      <div>
-        <h4>Data audit → cleaning</h4>
-        <pre><code># quick checks
-df.info()
-df.isna().mean().sort_values(ascending=False).head()</code></pre>
-      </div>
-    </div>
+<p>This framework helps me stay consistent, transparent, and impactful when delivering insights.</p>
 
-    <div class="step">
-      <span class="num">03</span>
-      <div>
-        <h4>EDA → hypotheses</h4>
-        <p>Sketch charts, note surprises, list candidate drivers to test.</p>
-      </div>
-    </div>
-
-    <div class="step">
-      <span class="num">04</span>
-      <div>
-        <h4>Model & metrics</h4>
-        <pre><code># baseline → iterate
-mape = (abs(y - yhat)/y).mean()</code></pre>
-      </div>
-    </div>
-
-    <div class="step">
-      <span class="num">05</span>
-      <div>
-        <h4>Decision & narrative</h4>
-        <p>Summarize the “so what,” alternatives considered, and risks.</p>
-      </div>
-    </div>
-  </article>
-</main>
-
-<footer class="site-footer"><div class="container">© <span id="y"></span> Ogechi — codeurmystique</div></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body></html>
+<footer>
+  Codeurmystique ~ Data is the oil, Insight is the fire
+</footer>
