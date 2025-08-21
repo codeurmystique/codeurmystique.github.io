@@ -1,0 +1,43 @@
+title: "Codeurmystique's Portfolio"
+description: "Data is the oil, Insight is the fire"
+baseurl: "" # keep empty for user.github.io repo
+url: "https://codeurmystique.github.io" # replace with your GH Pages URL
+
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: dirt   # base skin, we override colors below
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: /
+  - title: "Projects"
+    url: /projects/
+  - title: "Process"
+    url: /process/
+  - title: "Visuals"
+    url: /visuals/
+  - title: "About"
+    url: /about/
+
+# Author
+author:
+  name: "Ogechi Laura Amajuoyi"
+  bio: "Data Whisperer • Analytics Enthusiast"
+  avatar: "/assets/images/avatar.png"
+
+# Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/yourusername"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/ogechiamajuoyi/"
+      custom: true
