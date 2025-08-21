@@ -1,71 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ogechi Laura Amajuoyi — Portfolio Website</title>
-<link rel="stylesheet" href="assets/css/style.css">
-<script defer src="assets/js/site.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of a Data Analyst specializing in storytelling with data, analytics, and visualizations.">
+  <title>Ogechi Laura Amajuoyi | Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="site.js"></script>
 </head>
 <body>
-<header class="site-header">
-  <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:1rem;">
-    <div class="brand">
-      <div class="dot"></div>
-      <div>
-        <h1>Ogechi Laura Amajuoyi</h1>
-        <small> • Data Analyst •authentic •handcrafted •insightful</small>
-      </div>
-    </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="process.html">Process</a>
-      <a href="visuals.html">Visuals</a>
-      <a href="about.html">About</a>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Codeurmystique</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="visuals.html">Visuals</a></li>
+      </ul>
     </nav>
-  </div>
-</header>
+    <section class="hero">
+      <h1>Turning Data into Meaning</h1>
+      <p>Data is the oil, insight is the fire. Welcome to my portfolio where I explore stories hidden in data.</p>
+      <a href="projects.html" class="btn">Explore My Work</a>
+    </section>
+  </header>
+  <footer>
+    Codeurmystique ~ Data is the oil, Insight is the fire
+  </footer>
+</body>
+</html>
 
-<section class="hero">
-  <div class="container">
-    <h2>Turning messy data into clear, confident decisions — with story, craft, and care.</h2>
-    <p style="max-width:720px;">I blend statistical rigor with a focus on telling clear, compelling stories.<p>Here are a few featured case studies. To see more of my work, you can explore the full project library, read about my thought process, or browse my visual artifacts</p>
-  </div>
-</section>
-
-<main class="container">
-  <h3 class="section-title">Featured Case Studies</h3>
-  <div class="grid">
-    <a class="card" href="study-forecast.html">
-      <img class="thumb" src="assets/img/thumb-forecast.svg" alt="Retail Forecasting">
-      <h3>Retail Sales Forecasting</h3>
-      <p>Reduced MAPE by 18% with SARIMAX baseline + exogenous features.</p>
-      <div class="badges"><span>Time series</span><span>statsmodels</span></div>
-    </a>
-    <a class="card" href="study-taxi.html">
-      <img class="thumb" src="assets/img/thumb-taxi.svg" alt="NYC Taxi EDA">
-      <h3>NYC Taxi EDA</h3>
-      <p>Cleaned fares, identified anomalies, and mapped demand hot spots.</p>
-      <div class="badges"><span>Pandas</span><span>Geo</span><span>Altair</span></div>
-    </a>
-    <a class="card" href="study-bike.html">
-      <img class="thumb" src="assets/img/thumb-bike.svg" alt="Bike">
-      <h3>Converting Casual Riders</h3>
-      <p>Segmentation + uplift levers to increase membership conversions.</p>
-      <div class="badges"><span>SQL</span><span>Python</span><span>Power BI</span></div>
-    </a>
-  </div>
-
-  <h3 class="section-title">Signals & Impact</h3>
-  <div class="grid">
-    <div class="paper"><strong>18% ↓ MAPE</strong> on retail forecast</div>
-    <div class="paper"><strong>3</strong> high‑leverage actions identified</div>
-    <div class="paper"><strong>2×</strong> faster KPI refresh with BI automation</div>
-  </div>
-</main>
-
-<footer class="site-footer">
-  <div class="container">© <span id="y"></span> Ogechi Laura Amajuoyi — Data is the oil, but insight is the fire • <a href="mailto:ogechilauraamajuoyi@gmail.com">ogechilauraamajuoyi@gmail.com</a></div>
-</footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body></html>
