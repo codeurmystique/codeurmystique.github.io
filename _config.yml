@@ -1,10 +1,14 @@
 title: "Codeurmystique's Portfolio"
 description: "Data is the oil, Insight is the fire"
-baseurl: "" # keep empty for user.github.io repo
-url: "https://codeurmystique.github.io" # replace with your GH Pages URL
 
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: dirt   # base skin, we override colors below
+# The URL and Baseurl are configured correctly for a user/organization page.
+url: "https://codeurmystique.github.io" 
+baseurl: "" # Keep empty for user.github.io repo
+
+# The recommended way to use a theme on GitHub Pages is with remote_theme.
+# This fixes the "theme not found" error.
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "dirt"
 
 # Plugins
 plugins:
@@ -41,9 +45,9 @@ author:
 footer:
   links:
     - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/yourusername"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/ogechiamajuoyi/"
-      custom: true
+      icon: "fab fa-fw fa-github" # Font Awesome icon class for GitHub
+      url: "https://github.com/codeurmystique" # Add the full URL to your GitHub profile
+    # Consider adding your LinkedIn profile for a professional touch.
+    # - label: "LinkedIn"
+    #   icon: "fab fa-fw fa-linkedin"
+    #   url: "https://www.linkedin.com/in/your-linkedin-profile"
