@@ -1,55 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NYC Taxi EDA — Case Study</title>
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study 4 | NYC Pricing Prediction</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
-    <div class="brand"><div class="dot"></div><h1>NYC Taxi EDA</h1></div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="process.html">Process</a>
-      <a href="visuals.html">Visuals</a>
-    </nav>
-  </div>
+<header class="sub-header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">Codeurmystique</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="visuals.html">Visuals</a></li>
+    </ul>
+  </nav>
 </header>
 
-<main class="container">
-  <article class="paper">
-    <h3 class="section-title">Summary</h3>
-    <p>Cleaned data, detected fare anomalies, and mapped high‑demand zones to inform pricing and dispatch.</p>
-
-    <h3 class="section-title">Problem</h3>
-    <p>Understand patterns in trip duration, fares, and pickup hotspots; flag anomalies.</p>
-
-    <h3 class="section-title">Data</h3>
-    <ul>
-      <li>Sources: NYC TLC trips + geo shapefiles</li>
-      <li>Timeframe: 2019 full year</li>
-      <li>Size & key fields: ~10M rows; features: pickup_lat/lon, dropoff_lat/lon, fare, tip, distance</li>
-    </ul>
-
-    <h3 class="section-title">Approach</h3>
-    <p>Outlier capping on fare & distance; temporal aggregation; hexbin heatmaps.</p>
-    <pre><code>df = df[df.fare.between(2,200)]
-# hexbin aggregations by hour and zone</code></pre>
-
-    <h3 class="section-title">Results</h3>
-    <p>Found undercharged routes and peak-time clusters near transit hubs.</p>
-
-    <h3 class="section-title">Links</h3>
-    <ul>
-      <li><a href="#">Notebook / repo</a></li>
-      <li><a href="#">Dashboard</a></li>
-      <li><a href="#">Dataset</a></li>
-    </ul>
-  </article>
+<main class="content">
+  <h1>Case Study 4: NYC Taxi Pricing Prediction (Work-in-Progress)</h1>
+  <p><em>Dataset:</em> New York City TLC Trip Record Data (public dataset – licensed for educational use).</p>
+  <h2>Business Context</h2>
+  <p>To demonstrate predictive modeling, I am developing a <strong>pricing prediction model</strong> for NYC taxi fares. This project is designed to showcase advanced data science workflow and communication of progress.</p>
+  <h2>Tools Used</h2>
+  <ul>
+    <li>Python</li>
+    <li>Jupyter Notebook</li>
+    <li>Pandas & NumPy</li>
+  </ul>
+  <h2>Deliverables</h2>
+  <ul>
+    <li>Project Proposal Document</li>
+    <li>Strategy Document</li>
+    <li>Executive Summary</li>
+    <li>Structured DataFrame prepared for Exploratory Data Analysis</li>
+    <li>Progress Updates shared with team</li>
+  </ul>
+  <h2>Current Progress</h2>
+  <p>Data cleaning is underway. Initial insights reveal unusual outliers (negative fares, extremely long trips). Early models suggest trip distance and pickup location are strong predictors of fare amount.</p>
 </main>
 
-<footer class="site-footer"><div class="container">© <span id="y"></span> Ogechi — codeurmystique</div></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body></html>
+<footer>
+  Codeurmystique ~ Data is the oil, Insight is the fire
+</footer>
+</body>
+</html>
