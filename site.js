@@ -1,34 +1,30 @@
 
-// Simple search for projects grid
-function setupSearch() {
-  const q = document.getElementById('search');
-  const grid = document.getElementById('projectsGrid');
-  if (!q || !grid) return;
-  const cards = Array.from(grid.querySelectorAll('.card'));
-  q.addEventListener('input', (e)=>{
-    const v = e.target.value.toLowerCase();
-    cards.forEach(c=>{
-      const text = c.innerText.toLowerCase();
-      c.style.display = text.includes(v) ? '' : 'none';
+// site.js
+document.addEventListener("DOMContentLoaded", function() {
+  // Smooth scroll for nav links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth"
+      });
     });
   });
-}
 
-// Lightweight lightbox
-function setupLightbox(){
-  const lb = document.getElementById('lightbox');
-  if(!lb) return;
-  const imgs = document.querySelectorAll('[data-lightbox]');
-  imgs.forEach(img => {
-    img.addEventListener('click', ()=>{
-      lb.querySelector('img').src = img.src;
-      lb.classList.add('active');
+  // Simple fade-in on scroll
+  const faders = document.querySelectorAll(".fade-in");
+  const appearOptions = { threshold: 0.2 };
+
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("appear");
+      observer.unobserve(entry.target);
     });
-  });
-  lb.addEventListener('click', ()=> lb.classList.remove('active'));
-}
+  }, appearOptions);
 
-document.addEventListener('DOMContentLoaded', ()=>{
-  setupSearch();
-  setupLightbox();
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
 });
+
