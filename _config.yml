@@ -11,6 +11,12 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-include-cache
+
+# Your custom styles
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Navigation
 navigation:
