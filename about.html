@@ -1,11 +1,33 @@
----
-title: "About Me"
-layout: single
-permalink: /about/
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Codeurmystique</title>
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="{{ '/' | relative_url }}" class="logo">Codeurmystique</a>
+            <ul class="nav-links">
+                <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+                <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+                <li><a href="{{ '/process/' | relative_url }}">Process</a></li>
+                <li><a href="{{ '/visuals/' | relative_url }}">Visuals</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<p>Hello, I’m <strong>Ogechi Laura Amajuoyi aka~Codeurmystique</strong>, a data analyst passionate about transforming raw numbers into meaningful insights. My approach is nostalgic and handcrafted, but always guided by modern analytical rigor.
-<br><br>
-With experience across tools like Excel, R, SQL, Tableau, and Python, I combine storytelling with technical analysis to provide clear, actionable insights for businesses and communities.</p>
+    <main class="content">
+        <h1>About Me</h1>
+        <p>Hello! I'm Ogechi Laura Amajuoyi — a data whisperer who transforms raw datasets into compelling insights and stories. 
+        My work blends nostalgia in design with authenticity in analysis, guided by the motto: 
+        <em>Data is the oil, Insight is the fire.</em></p>
+    </main>
 
-<p>I built this portfolio to showcase my thought process, visualizations, and full-cycle project journeys. Each case study reflects my ability to adapt tools to the problem at hand.</p>
+    <footer class="site-footer">
+        <p>Codeurmystique ~ Data is the oil, Insight is the fire</p>
+    </footer>
+</body>
+</html>
