@@ -1,32 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Case Study 4 | NYC Taxi Prediction</title>
-  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <a href="{{ '/' | relative_url }}" class="logo">Codeurmystique</a>
-      <ul class="nav-links">
-        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-        <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
-        <li><a href="{{ '/process/' | relative_url }}">Process</a></li>
-        <li><a href="{{ '/visuals/' | relative_url }}">Visuals</a></li>
-      </ul>
-    </nav>
-  </header>
+---
+title: "Case Study 4: NYC Pricing Prediction Model"
+layout: single
+permalink: "/projects/nyc-pricing-prediction/"
+---
 
-  <main class="content">
-    <h1>NYC Taxi Pricing Prediction</h1>
-    <p><strong>Tool:</strong> Python</p>
-    <p>This predictive model estimated taxi fares based on distance, location, and demand. Using Python libraries like Pandas, Scikit-learn, and Matplotlib, I developed a regression model and identified anomalies (e.g., negative fares). The results demonstrated how data science improves real-world pricing strategies.</p>
-  </main>
+<!-- This case study is a work in progress and reflects the data science lifecycle. -->
 
-  <footer class="site-footer">
-    <p>Codeurmystique ~ Data is the oil, Insight is the fire</p>
-  </footer>
-</body>
-</html>
+<h1>Case Study 4: NYC Pricing Prediction Model</h1>
+
+<!-- Phase 1: Plan -->
+<h2>1. Plan: Defining the Problem</h2>
+<p>
+    This project aims to build a machine learning model to predict New York City taxi fares. The goal is to provide a predictive tool for both riders and drivers to estimate trip costs, improving transparency and efficiency in the transportation service. The data used is a public dataset from the NYC Taxi and Limousine Commission (TLC).
+</p>
+<ul class="list-none space-y-3 text-left pl-0 text-lg">
+    <li class="flex items-start">
+        <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+        <p class="text-gray-800"><strong>Objective:</strong> Develop a regression model to predict taxi fare based on various features.</p>
+    </li>
+    <li class="flex items-start">
+        <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+        <p class="text-gray-800"><strong>Data Source:</strong> NYC Taxi and Limousine Commission (TLC) Trip Record Data.</p>
+    </li>
+    <li class="flex items-start">
+        <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+        <p class="text-gray-800"><strong>Tools:</strong> Python, Pandas, Scikit-learn, and Matplotlib.</p>
+    </li>
+</ul>
+
+<!-- Phase 2: Analyze -->
+<h2>2. Analyze: Data Cleaning and Exploration (Current Phase)</h2>
+<p>
+    This phase involves a deep dive into the raw data. The initial steps include data cleaning to handle missing values and outliers, as well as feature engineering to create new variables that will improve the model's performance. The key objective is to understand the underlying patterns and relationships within the data.
+</p>
+<ul class="list-none space-y-3 text-left pl-0 text-lg">
+    <li class="flex items-start">
+        <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+        <p class="text-gray-800"><strong>Data Cleaning:</strong> Filtering out trips with zero or negative fare amounts, removing incorrect pickup and drop-off coordinates, and addressing inconsistent data entries.</p>
+    </li>
+    <li class="flex items-start">
+        <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+        <p class="text-gray-800"><strong>Feature Engineering:</strong> Creating new features such as trip duration, distance, and time of day to better capture the factors influencing fare price.</p>
+    </li>
+    <li class="flex items-start">
+        <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+        <p class="text-gray-800"><strong>Exploratory Data Analysis (EDA):</strong> Visualizing the relationship between fare amount and other variables like distance, time of day, and passenger count to identify key drivers.</p>
+    </li>
+</ul>
+
+<!-- Phase 3: Construct -->
+<h2 class="text-gray-400">3. Construct: Building the Model (Coming Soon)</h2>
+<p class="text-gray-400">
+    This section will detail the process of building a machine learning model. It will cover feature selection, model training, and performance evaluation.
+</p>
+
+<!-- Phase 4: Execute -->
+<h2 class="text-gray-400">4. Execute: Finalizing the Project (Coming Soon)</h2>
+<p class="text-gray-400">
+    This final section will cover the deployment plan, the final recommendations, and the overall business impact of the project.
+</p>
