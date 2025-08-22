@@ -1,45 +1,47 @@
 ---
-layout: default
-title: Projects
+title: "Projects"
+layout: single
+permalink: /projects/
 ---
 
-<section class="projects-grid">
-  <h1>Case Studies</h1>
-  <div class="grid">
-    <!-- Case Study 1 -->
-    <article class="project-card">
-      <a href="{{ '/study-ab.html' | relative_url }}">
-        <img src="{{ '/assets/images/thumb-ab.svg' | relative_url }}" alt="Employee Attrition Analysis thumbnail">
-        <h2>Employee Attrition Analysis</h2>
-        <p>Exploring IBM HR Analytics dataset using Excel pivot tables and charts.</p>
-      </a>
-    </article>
+<p>Here is a showcase of my data analysis and portfolio projects.</p>
 
-    <!-- Case Study 2 -->
-    <article class="project-card">
-      <a href="{{ '/study-bike.html' | relative_url }}">
-        <img src="{{ '/assets/images/thumb-bike.svg' | relative_url }}" alt="Cyclistic Conversion thumbnail">
-        <h2>Cyclistic Bike-Share Conversion</h2>
-        <p>Behavioral analysis of riders using R and RStudio to drive membership strategy.</p>
-      </a>
-    </article>
-
-    <!-- Case Study 3 -->
-    <article class="project-card">
-      <a href="{{ '/study-forecast.html' | relative_url }}">
-        <img src="{{ '/assets/images/thumb-forecast.svg' | relative_url }}" alt="Bellabeat Marketing thumbnail">
-        <h2>Bellabeat Fitness Tracker Marketing</h2>
-        <p>Using SQL + Tableau to uncover marketing opportunities for women’s wellness.</p>
-      </a>
-    </article>
-
-    <!-- Case Study 4 -->
-    <article class="project-card">
-      <a href="{{ '/study-taxi.html' | relative_url }}">
-        <img src="{{ '/assets/images/thumb-taxi.svg' | relative_url }}" alt="NYC Pricing Prediction thumbnail">
-        <h2>NYC Pricing Prediction Model</h2>
-        <p>Python + Pandas workflow for TLC data. Includes proposal, strategy, and progress docs.</p>
-      </a>
-    </article>
-  </div>
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+  <a href="/study-ab/" class="card block border rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div class="p-4">
+      <img src="/assets/images/thumb-ab.svg" alt="Employee Attrition Study Thumbnail" class="w-full h-auto mb-2 rounded-md">
+      <div class="text-center">
+        <h2 class="text-lg font-bold mb-1">Employee Attrition Analysis</h2>
+        <p class="text-sm text-gray-600">Using IBM HR dataset, Excel & Pivot Charts</p>
+      </div>
+    </div>
+  </a>
+  <a href="/study-bike/" class="card block border rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div class="p-4">
+      <img src="/assets/images/thumb-bike.svg" alt="Bike Share Study Thumbnail" class="w-full h-auto mb-2 rounded-md">
+      <div class="text-center">
+        <h2 class="text-lg font-bold mb-1">Bike-Share Conversion</h2>
+        <p class="text-sm text-gray-600">Using R & RStudio for Cyclistic</p>
+      </div>
+    </div>
+  </a>
+  <a href="/study-forecast/" class="card block border rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div class="p-4">
+      <img src="/assets/images/thumb-forecast.svg" alt="Fitness Tracker Study Thumbnail" class="w-full h-auto mb-2 rounded-md">
+      <div class="text-center">
+        <h2 class="text-lg font-bold mb-1">Fitness-Tracker Marketing</h2>
+        <p class="text-sm text-gray-600">Using SQL & Tableau for Bellabeat</p>
+      </div>
+    </div>
+  </a>
+  <a href="/study-taxi/" class="card block border rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div class="p-4">
+      <img src="/assets/images/thumb-taxi.svg" alt="NYC Pricing Study Thumbnail" class="w-full h-auto mb-2 rounded-md">
+      <div class="text-center">
+        <h2 class="text-lg font-bold mb-1">NYC Pricing Prediction</h2>
+        <p class="text-sm text-gray-600">Work-in-Progress | Python & Pandas</p>
+      </div>
+    </div>
+  </a>
 </section>
+
