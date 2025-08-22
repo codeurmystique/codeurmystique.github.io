@@ -1,36 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Codeurmystique</title>
-    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="{{ '/' | relative_url }}" class="logo">Codeurmystique</a>
-            <ul class="nav-links">
-                <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-                <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
-                <li><a href="{{ '/process/' | relative_url }}">Process</a></li>
-                <li><a href="{{ '/visuals/' | relative_url }}">Visuals</a></li>
-            </ul>
-        </nav>
-    </header>
+---
+layout: default
+title: Projects
+---
 
-    <main class="content">
-        <h1>Projects</h1>
-        <ul class="case-studies">
-            <li><a href="{{ '/study-ab.html' | relative_url }}">Employee Attrition Analysis (Excel)</a></li>
-            <li><a href="{{ '/study-bike.html' | relative_url }}">Cyclistic Bike-Share Conversion (R & RStudio)</a></li>
-            <li><a href="{{ '/study-forecast.html' | relative_url }}">Bellabeat Fitness Marketing (SQL + Tableau)</a></li>
-            <li><a href="{{ '/study-taxi.html' | relative_url }}">NYC Taxi Pricing Prediction (Python)</a></li>
-        </ul>
-    </main>
+<section class="projects-grid">
+  <h1>Case Studies</h1>
+  <div class="grid">
+    <!-- Case Study 1 -->
+    <article class="project-card">
+      <a href="{{ '/study-ab.html' | relative_url }}">
+        <img src="{{ '/assets/images/thumb-ab.svg' | relative_url }}" alt="Employee Attrition Analysis thumbnail">
+        <h2>Employee Attrition Analysis</h2>
+        <p>Exploring IBM HR Analytics dataset using Excel pivot tables and charts.</p>
+      </a>
+    </article>
 
-    <footer class="site-footer">
-        <p>Codeurmystique ~ Data is the oil, Insight is the fire</p>
-    </footer>
-</body>
+    <!-- Case Study 2 -->
+    <article class="project-card">
+      <a href="{{ '/study-bike.html' | relative_url }}">
+        <img src="{{ '/assets/images/thumb-bike.svg' | relative_url }}" alt="Cyclistic Conversion thumbnail">
+        <h2>Cyclistic Bike-Share Conversion</h2>
+        <p>Behavioral analysis of riders using R and RStudio to drive membership strategy.</p>
+      </a>
+    </article>
+
+    <!-- Case Study 3 -->
+    <article class="project-card">
+      <a href="{{ '/study-forecast.html' | relative_url }}">
+        <img src="{{ '/assets/images/thumb-forecast.svg' | relative_url }}" alt="Bellabeat Marketing thumbnail">
+        <h2>Bellabeat Fitness Tracker Marketing</h2>
+        <p>Using SQL + Tableau to uncover marketing opportunities for women’s wellness.</p>
+      </a>
+    </article>
+
+    <!-- Case Study 4 -->
+    <article class="project-card">
+      <a href="{{ '/study-taxi.html' | relative_url }}">
+        <img src="{{ '/assets/images/thumb-taxi.svg' | relative_url }}" alt="NYC Pricing Prediction thumbnail">
+        <h2>NYC Pricing Prediction Model</h2>
+        <p>Python + Pandas workflow for TLC data. Includes proposal, strategy, and progress docs.</p>
+      </a>
+    </article>
+  </div>
+</section>
+
 </html>
