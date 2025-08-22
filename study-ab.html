@@ -1,32 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Case Study 1 | Employee Attrition (Excel)</title>
-  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <a href="{{ '/' | relative_url }}" class="logo">Codeurmystique</a>
-      <ul class="nav-links">
-        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-        <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
-        <li><a href="{{ '/process/' | relative_url }}">Process</a></li>
-        <li><a href="{{ '/visuals/' | relative_url }}">Visuals</a></li>
-      </ul>
-    </nav>
-  </header>
+---
+title: "Case Study 1: Employee Attrition Analysis"
+layout: single
+permalink: "/case-studies/employee-attrition/"
+---
 
-  <main class="content">
-    <h1>Employee Attrition Analysis</h1>
-    <p><strong>Tool:</strong> Excel</p>
-    <p>This study focused on employee turnover patterns. Using Excel pivot tables and charts, I identified trends across departments, demographics, and tenure. The insights informed retention strategies such as improving onboarding, targeted career growth opportunities, and better exit tracking.</p>
-  </main>
+<!-- Step 1: Business Context -->
+<h2>Business Context</h2>
+<p>
+    This study focused on employee turnover patterns at a company. Employee attrition is a significant issue that affects productivity, morale, and recruitment costs. The goal of this analysis was to identify the key factors contributing to employees leaving the company.
+</p>
 
-  <footer class="site-footer">
-    <p>Codeurmystique ~ Data is the oil, Insight is the fire</p>
-  </footer>
-</body>
-</html>
+<!-- Step 2: Data Analysis & Visualization -->
+<h2>Data Analysis & Visualization</h2>
+<p>
+    Using **Microsoft Excel**, I performed a deep dive into the company's HR dataset. I utilized pivot tables to summarize data by department, age, tenure, and salary. Pivot charts were created to visualize key trends and patterns, making the data easy to understand at a glance.
+</p>
+
+<!-- Step 3: Key Insights -->
+<h2>Key Insights</h2>
+<ul class="list-none space-y-3 text-left pl-0 text-lg">
+    <li class="flex items-start">
+        <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+        <p class="text-gray-800">High attrition was most prominent among younger employees and those in lower salary bands, suggesting a need for competitive compensation and growth opportunities.</p>
+    </li>
+    <li class="flex items-start">
+        <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+        <p class="text-gray-800">Work-life balance and job satisfaction were strongly correlated with retention, with employees who reported poor scores in these areas being more likely to leave.</p>
+    </li>
+    <li class="flex items-start">
+        <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+        <p class="text-gray-800">The Sales and HR departments had the highest turnover rates, indicating potential departmental-specific issues that needed to be addressed.</p>
+    </li>
+</ul>
+
+<!-- Step 4: Recommendations -->
+<h2>Recommendations</h2>
+<p>
+    Based on the insights from the analysis, I provided actionable recommendations to help the company reduce attrition and improve retention:
+</p>
+<ul class="list-none space-y-3 text-left pl-0 text-lg">
+    <li class="flex items-start">
+        <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+        <p class="text-gray-800">Implement **targeted retention programs** for early-career staff, including mentorship and career pathing.</p>
+    </li>
+    <li class="flex items-start">
+        <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+        <p class="text-gray-800">Review compensation in roles with high attrition to ensure salaries are competitive with the market.</p>
+    </li>
+    <li class="flex items-start">
+        <span class="mr-2 text-yellow-500 font-semibold text-xl">&bull;</span>
+        <p class="text-gray-800">Promote **flexible working options** and work-from-home policies to improve work-life balance and overall job satisfaction.</p>
+    </li>
+</ul>
