@@ -1,30 +1,36 @@
----
-title: "Projects"
-layout: single
-permalink: /projects/
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Codeurmystique</title>
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="{{ '/' | relative_url }}" class="logo">Codeurmystique</a>
+            <ul class="nav-links">
+                <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+                <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+                <li><a href="{{ '/process/' | relative_url }}">Process</a></li>
+                <li><a href="{{ '/visuals/' | relative_url }}">Visuals</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<p>Here is a showcase of my data analysis and portfolio projects.</p>
+    <main class="content">
+        <h1>Projects</h1>
+        <ul class="case-studies">
+            <li><a href="{{ '/study-1.html' | relative_url }}">Employee Attrition Analysis (Excel)</a></li>
+            <li><a href="{{ '/study-2.html' | relative_url }}">Cyclistic Bike-Share Conversion (R & RStudio)</a></li>
+            <li><a href="{{ '/study-3.html' | relative_url }}">Bellabeat Fitness Marketing (SQL + Tableau)</a></li>
+            <li><a href="{{ '/study-4.html' | relative_url }}">NYC Taxi Pricing Prediction (Python)</a></li>
+        </ul>
+    </main>
 
-<section class="grid">
-  <a href="/study-ab/" class="card">
-    <img src="/assets/images/thumb-ab.svg" alt="Employee Attrition Study Thumbnail">
-    <h2>Employee Attrition Analysis</h2>
-    <p>Using IBM HR dataset, Excel & Pivot Charts</p>
-  </a>
-  <a href="/study-bike/" class="card">
-    <img src="/assets/images/thumb-bike.svg" alt="Bike Share Study Thumbnail">
-    <h2>Bike-Share Conversion</h2>
-    <p>Using R & RStudio for Cyclistic</p>
-  </a>
-  <a href="/study-forecast/" class="card">
-    <img src="/assets/images/thumb-forecast.svg" alt="Fitness Tracker Study Thumbnail">
-    <h2>Fitness-Tracker Marketing</h2>
-    <p>Using SQL & Tableau for Bellabeat</p>
-  </a>
-  <a href="/study-taxi/" class="card">
-    <img src="/assets/images/thumb-taxi.svg" alt="NYC Pricing Study Thumbnail">
-    <h2>NYC Pricing Prediction</h2>
-    <p>Work-in-Progress | Python & Pandas</p>
-  </a>
-</section>
+    <footer class="site-footer">
+        <p>Codeurmystique ~ Data is the oil, Insight is the fire</p>
+    </footer>
+</body>
+</html>
