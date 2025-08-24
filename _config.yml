@@ -44,3 +44,6 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/ogechiamajuoyi"
+    - label: "Kaggle"
+      icon: "fab fa-kaggle"
+      url: "https://www.kaggle.com/ogechilauraamajuoyi"
