@@ -1,12 +1,13 @@
 title: "Codeurmystique's Portfolio"
-description: "Bookmark this to keep an eye on my project updates! Remember ~ Data is the oil, Insight is the fire"
+description: "Bookmark this to keep an eye on my project updates! Remember ~ Data is the oil, but Insight is the fire"
 
 # URL setup for GitHub Pages
 url: "https://codeurmystique.github.io"
 baseurl: "" # keep empty for user.github.io repos
 
 # Theme
-remote_theme: "mmistakes/minimal-mistakes"
+theme: null
+remote_theme: "mmistakes/minimal-mistakes@4.26.2" # pinned stable release
 minimal_mistakes_skin: "dirt"
 
 # Plugins
@@ -46,4 +47,15 @@ footer:
       url: "https://www.linkedin.com/in/ogechiamajuoyi"
     - label: "Kaggle"
       icon: "fab fa-kaggle"
-      url: "https://www.kaggle.com/ogechilauraamajuoyi"
+      url: "https://www.kaggle.com/ogechilaura"
+
+# Exclude unnecessary files from Jekyll processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - LICENSE
+  - .github
+
