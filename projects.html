@@ -1,36 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Codeurmystique</title>
-    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="{{ '/' | relative_url }}" class="logo">Codeurmystique</a>
-            <ul class="nav-links">
-                <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-                <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
-                <li><a href="{{ '/process/' | relative_url }}">Process</a></li>
-                <li><a href="{{ '/visuals/' | relative_url }}">Visuals</a></li>
-            </ul>
-        </nav>
-    </header>
+---
+layout: single
+title: "Projects"
+permalink: /projects/
+---
 
-    <main class="content">
-        <h1>Projects</h1>
-        <ul class="case-studies">
-            <li><a href="{{ '/study-1.html' | relative_url }}">Employee Attrition Analysis (Excel)</a></li>
-            <li><a href="{{ '/study-2.html' | relative_url }}">Cyclistic Bike-Share Conversion (R & RStudio)</a></li>
-            <li><a href="{{ '/study-3.html' | relative_url }}">Bellabeat Fitness Marketing (SQL + Tableau)</a></li>
-            <li><a href="{{ '/study-4.html' | relative_url }}">NYC Taxi Pricing Prediction (Python)</a></li>
-        </ul>
-    </main>
-
-    <footer class="site-footer">
-        <p>Codeurmystique ~ Data is the oil, Insight is the fire</p>
-    </footer>
-</body>
-</html>
+<h1>Projects</h1>
+<ul class="case-studies">
+    <li><a href="/projects/employee-attrition/">Employee Attrition Analysis (Excel)</a></li>
+    <li><a href="/projects/bike-share-conversion/">Cyclistic Bike-Share Conversion (R & RStudio)</a></li>
+    <li><a href="/projects/fitness-tracker-marketing/">Bellabeat Fitness Marketing (SQL + Tableau)</a></li>
+    <li><a href="/projects/nyc-pricing-prediction/">NYC Taxi Pricing Prediction (Python)</a></li>
+</ul>
