@@ -47,7 +47,7 @@ footer:
       url: "https://www.linkedin.com/in/ogechiamajuoyi"
     - label: "Kaggle"
       icon: "fab fa-kaggle"
-      url: "https://www.kaggle.com/ogechilaura"
+      url: "https://www.kaggle.com/ogechilauraamajuoyi"
 
 # Exclude unnecessary files from Jekyll processing
 exclude:
