@@ -16,11 +16,13 @@ I love uncovering insights hidden in data and turning them into actionable stori
 ---
 
 ### 📂 Featured Projects
+### 📂 Featured Projects
 | Project | Description | Tools |
 | ------- | ----------- | ----- |
-| 🚲 **Bike Share Conversion Analysis** | Analyzed rider behavior to increase membership conversions | R, Tidyverse, ggplot2 |
-| 📊 **Fitness Tracker Marketing Analysis** | Analyzed smart device usage to guide marketing strategy | SQL, Tableau |
-| 🧠 **Employee Attrition Analysis** | Analyzed employee data to improve employee retention | Microsoft Excel, Pivot Tables |
+| 🚲 [**Bike Share Conversion Analysis**](https://www.kaggle.com/ogechilauraamajuoyi/bike-share-conversion-analysis) | Analyzed rider behavior to increase membership conversions | R, Tidyverse, ggplot2 |
+| 📊 [**Fitness Tracker Marketing Analysis**](https://www.kaggle.com/ogechilauraamajuoyi/fitness-tracker-marketing-analysis) | Analyzed smart device usage to guide marketing strategy | SQL, Tableau |
+| 🧠 [**Employee Attrition Analysis**](https://www.kaggle.com/code/ogechilauraamajuoyi/employee-attrition-analysis) | Analyzed employee data to improve employee retention | Microsoft Excel, Pivot Tables |
+
 
 ---
 
@@ -38,6 +40,7 @@ I love uncovering insights hidden in data and turning them into actionable stori
 - **Portfolio** → [codeurmystique.github.io](https://codeurmystique.github.io)
 - **LinkedIn** → [linkedin.com/in/ogechiamajuoyi](https://linkedin.com/in/ogechiamajuoyi)
 - **GitHub** → [github.com/codeurmystique](https://github.com/codeurmystique)
+- **Kaggle** → [kaggle.com/ogechilauraamajuoyi](https://www.kaggle.com/ogechilauraamajuoyi)
 - **Email** → ogechilauraamajuoyi@gmail.com
 
 ---
